@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac Shopping</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/apple-favicon.png" type="image/x-icon">
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="css//style.css">
+
+</head>
+<body>
+<section class="container mt-5 shadow-lg p-3 mb-5 bg-white rounded">
+    <div class="container"> 
+      <!-- Main Container -->
+    <div class="row">
+      <!-- Product Image -->
+      <div class="col-12 col-md-6 mt-3 g-5">
+        <img class="img-fluid" src="images/mac.png" alt="iMac With Apple M1 Chip.">
+      </div>
+      <!-- Product Description -->
+      <div class="col-12 col-md-6 mt-3 g-5">
+        <h1>Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
+        <p>
+          Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt / USB 4 ports Magic Mouse Magic Keyboard US English.
+        </p>
+        <!-- Option -->
+        <div>
+          <h5 class="mt-5">Memory</h5>
+        <div class="mt-3">
+          <button id="8GB" class="p-2 bg-light text-dark rounded-pill text-decoration-none">8GB unified memory</button>
+          <button id="16GB" class="p-2 bg-light text-dark rounded-pill text-decoration-none">16GB unified memory</button>
+        </div>
+        </div>
+
+        <div>
+          <h5 class="mt-5">Storage</h5>
+        <div class="mt-3">
+          <button id="256GB" class="p-2 bg-light text-dark rounded-pill text-decoration-none">256GB SSD Storage</button>
+          <button id="512GB" class="p-2 bg-light text-dark rounded-pill text-decoration-none">512GB SSD Storage</button>
+          <button id="1TB" class="p-2 bg-light text-dark rounded-pill text-decoration-none">1TB SSD Storage</button>
+        </div>
+        </div>
+
+        <div>
+          <h5 class="mt-5">Choose your delivery option</h5>
+        <div class="mt-3">
+          <button id="Aug-25" class="p-2 bg-light text-dark rounded-pill text-decoration-none ">Friday, Aug 25 Free Prime Delivery</button>
+          <button id="Aug-21" class="p-2 bg-light text-dark rounded-pill text-decoration-none ">Friday, Aug 21 Delivery Charge $20</button>
+        </div>
+        <!-- Counting Table -->
+        <div class="row">
+          <div class="col-6">
+            <table class="table mt-5">
+              <thead>
+                <tr>
+                  <th scope="col">Best Price</th>
+                  <th scope="col">$<span id="defult-cost">1299</span> </th>
+                </tr>
+              </thead>
+              <tbody>
+                <thead>
+                  <th>Extra Memory Cost</th>
+                  <th>$<span id="memory-cost">0</span> </th>
+                </thead>
+                <thead>
+                  <th>Extra Storage Cost</th>
+                  <th>$<span id="storage-cost">0</span></th>
+                </thead>
+                <thead>
+                   <th scope="col">Delivery Charge</th>
+                    <th scope="col">$<span id="delivery-cost">0</span></th> </thead>
+                <thead>
+                  <th>Total Price</th>
+                  <th>$<span id="sub-total">1299</span></th>
+                </thead>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- Promo Code -->
+        <div>
+          <h5>Add promo Code</h5>
+          <input id="promo-value" class="px-2 rounded-2" type="text">
+          <button id="promo-button" class="bg-info rounded-2 px-2">Apply</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="notify-section">
+    <p id="notify-msg" class="notify">❌ Didn't Match, Please try again</p> 
+</div>
+  <hr>
+  <div class="text-center shadow-sm p-3 mb-5 bg-white rounded">
+    <h1>Total: $<span id="total">1299</span></h1>
+  </div>
+</section>
+
+
+
+<script src="js/apps.js"></script>
+</body>
+</html>
